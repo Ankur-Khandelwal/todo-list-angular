@@ -1,0 +1,11 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="todo-title" class="form-label">Title</label>
+    <input type="text" [(ngModel)]="todoTitle" class="form-control" id="todo-title" name="todoTitle" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="todo-desc" class="form-label">Description</label>
+    <input type="text" [(ngModel)]="todoDesc" class="form-control" id="todo-desc" name="todoDesc">
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
